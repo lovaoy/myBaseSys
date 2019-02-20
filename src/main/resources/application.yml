@@ -1,0 +1,21 @@
+spring:
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/student?characterEncoding=UTF-8
+    username: root
+    password: lovao1123
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update #新增数据库链接必备的参数
+    show-sql: true  #日志中显示sq
+  resources:
+    static-locations: classpath:/webapp
+  main:
+    allow-bean-definition-overriding: true
+server:
+  servlet:
+    context-path: /demo #配置项目路径，即在域名端口号中要加工程名进行访问

@@ -1,0 +1,11 @@
+.top {
+  float: right;
+}
+.left {
+  clear: both;
+  width: 20%;
+  text-align: center;
+}
+dd a {
+  cursor: pointer;
+}
